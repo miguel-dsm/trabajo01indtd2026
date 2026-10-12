@@ -15,17 +15,17 @@ Dada la matriz de decisión con valores numéricos inventados para 4 alternativa
 | d3                     | 14  | 14  | 12  |
 | d4                     |  9  | 18  |  6  |
 
-**Cuestionario (Indicar V o F para cada afirmación):**
+**Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
 
-**1.**En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d~3~ con un valor óptimo de 12.
+1.  En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d~3~ con un valor óptimo de 12.
 
-**2.**Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d~2~ con un arrepentimiento máximo de 5.
+2.  Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d~2~ con un arrepentimiento máximo de 5.
 
-**3.**Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d~2~ obteniendo un valor ponderado de 14.0.
+3.  Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d~2~ obteniendo un valor ponderado de 14.0.
 
-**4.**El criterio de Laplace otorga el mismo valor esperado tanto a d~1~ como a d~2~, siendo este exactamente de 11.67 unidades.
+4.  El criterio de Laplace otorga el mismo valor esperado tanto a d~1~ como a d~2~, siendo este exactamente de 11.67 unidades.
 
-**5.**En situación desfavorable (costos), el criterio Optimista selecciona d~3~ porque presenta el menor costo máximo global de 12.
+5.  En situación desfavorable (costos), el criterio Optimista selecciona d~3~ porque presenta el menor costo máximo global de 12.
 
 ## **Problema 2: Caso real. Selección del Destino Erasmus**
 
@@ -42,3 +42,15 @@ Teniendo en cuenta la cuantía de la beca asignada a cada país y el coste de vi
 - En **Cracovia**, dado el bajo coste de vida, obtendrá un ahorro de $2.200$ euros en residencia y de $1.400$ euros en piso estándar, manteniendo un saldo positivo de $500$ euros aun en el escenario más caro.
 
 - En **Coímbra**, estimó un ahorro de $1.800$ euros en residencia pública, de $1.000$ euros en piso estándar y de $200$ euros en el caso de piso caro.
+
+**Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
+
+1.  El criterio de Wald (pesimista) recomienda seleccionar Cracovia ($d_3$) porque es la opción que garantiza el mayor ahorro en el peor de los escenarios de alojamiento.
+
+2.  Un estudiante totalmente optimista elegirá la ciudad de Cracovia ($d_3$).
+
+3.  Aplicando el criterio de Laplace (equiprobabilidad), la decisión recomendada es Cracovia ($d_3$) con un ahorro medio esperado de $1.366,67$ €.
+
+4.  Bajo el criterio de Savage, Múnich ($d_2$) es la alternativa que minimiza el arrepentimiento máximo.
+
+5.  El destino Cracovia ($d_3$) resulta ser la opción óptima para la mayoría de los criterios analizados (Wald, Hurwicz, Laplace y Savage).
