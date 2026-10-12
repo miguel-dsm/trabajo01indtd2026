@@ -4,3 +4,39 @@ format: typst
 editor: visual
 ---
 
+## Problema 1: Tabla de decisión
+
+Dada la matriz de decisión con valores numéricos inventados para 4 alternativas de decisión (d1, d2, d3, d4) y 3 estados de la naturaleza (e1, e2, e3):
+
+| Alternativas / Estados | e1  | e2  | e3  |
+|:-----------------------|:---:|:---:|:---:|
+| d1                     | 12  |  8  | 15  |
+| d2                     | 20  |  5  | 10  |
+| d3                     | 14  | 14  | 12  |
+| d4                     |  9  | 18  |  6  |
+
+**Cuestionario (Indicar V o F para cada afirmación):**
+
+**1.**En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d~3~ con un valor óptimo de 12.
+
+**2.**Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d~2~ con un arrepentimiento máximo de 5.
+
+**3.**Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d~2~ obteniendo un valor ponderado de 14.0.
+
+**4.**El criterio de Laplace otorga el mismo valor esperado tanto a d~1~ como a d~2~, siendo este exactamente de 11.67 unidades.
+
+**5.**En situación desfavorable (costos), el criterio Optimista selecciona d~3~ porque presenta el menor costo máximo global de 12.
+
+## **Problema 2: Caso real. Selección del Destino Erasmus**
+
+Un estudiante del Grado en Estadística debe elegir su destino Erasmus para el próximo curso académico entre cuatro opciones disponibles: Bolonia ($d_1$), Múnich ($d_2$), Cracovia ($d_3$) y Coímbra ($d_4$). El objetivo del alumno es maximizar el ahorro económico neto al final de su estancia (expresado en euros).El ahorro final dependerá del coste de vida y la situación del alojamiento al llegar a cada destino, pudiendo darse tres casos posibles:$e_1$: Consigue plaza en residencia universitaria pública (situación muy económica).$e_2$: Alquila una habitación en piso compartido a precio estándar de mercado.$e_3$: Hay escasez de oferta y se ve obligado a alquilar una habitación en piso privado a precio elevado.
+
+Tras consultar la experiencia de alumnos de años anteriores, el estudiante estima los siguientes saldos de ahorro neto según la combinación de destino y alojamiento:
+
+- Si elige Bolonia ($d_1$), calcula un ahorro de $1.200$ € si logra plaza en residencia ($e_1$), $600$ € si alquila piso estándar ($e_2$), y un saldo negativo (pérdidas) de $-300$ € si se ve obligado a pagar un alquiler elevado ($e_3$).
+
+- Si elige Múnich ($d_2$), al ser una ciudad con beca más alta pero costes elevados, ahorraría $2.500$ € con plaza en residencia ($e_1$), $400$ € en piso estándar ($e_2$), pero sufriría pérdidas de $-1.200$ € en piso caro ($e_3$).
+
+- Si elige Cracovia ($d_3$), al tener un coste de vida muy bajo, obtendría un ahorro de $2.200$ € en residencia ($e_1$), $1.400$ € en piso estándar ($e_2$), y mantendría un ahorro positivo de $500$ € incluso si paga un piso caro ($e_3$).
+
+- Si elige Coímbra ($d_4$), obtendría $1.800$ € en residencia ($e_1$), $1.000$ € en piso estándar ($e_2$), y un saldo de $200$ € en piso caro ($e_3$).

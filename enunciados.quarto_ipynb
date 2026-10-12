@@ -1,0 +1,41 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"enunciados\"\n",
+        "format: typst\n",
+        "editor: visual\n",
+        "---\n",
+        "\n",
+        "## Problema 1\n",
+        "\n",
+        "Dada la matriz de decisión con valores numéricos inventados para 4 alternativas de decisión (d1, d2, d3, d4) y 3 estados de la naturaleza (e1, e2, e3):\n",
+        "\n",
+        "```{typst}\n",
+        "#table(\n",
+        "  columns: (auto, 1fr, 1fr, 1fr),\n",
+        "  align: (left, center, center, center),\n",
+        "  [Alternativas / Estados], [e1], [e2], [e3],\n",
+        "  [*d1*], [], [], [],\n",
+        "  [*d2*], [], [], [],\n",
+        "  [*d3*], [], [], [],\n",
+        "  [*d4*], [], [], []\n",
+        ")\n",
+        "```"
+      ],
+      "id": "ca2ebd4b"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
