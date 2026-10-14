@@ -1,6 +1,8 @@
 ---
 title: "enunciados"
-format: typst
+format:
+  typst: default
+  html: default
 editor: visual
 ---
 
@@ -45,12 +47,12 @@ Teniendo en cuenta la cuantía de la beca asignada a cada país y el coste de vi
 
 **Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
 
-1.  El criterio de Wald (pesimista) recomienda seleccionar Cracovia ($d_3$) porque es la opción que garantiza el mayor ahorro en el peor de los escenarios de alojamiento.
+1.  El criterio de Wald (pesimista) recomienda seleccionar Cracovia porque es la opción que garantiza el mayor ahorro en el peor de los escenarios de alojamiento.
 
-2.  Un estudiante totalmente optimista elegirá la ciudad de Cracovia ($d_3$).
+2.  Un estudiante totalmente optimista elegirá la ciudad de Cracovia.
 
-3.  Aplicando el criterio de Laplace (equiprobabilidad), la decisión recomendada es Cracovia ($d_3$) con un ahorro medio esperado de $1.366,67$ €.
+3.  Aplicando el criterio de Laplace (equiprobabilidad), la decisión recomendada es Cracovia con un ahorro medio esperado de $1.366,67$ €.
 
-4.  Bajo el criterio de Savage, Múnich ($d_2$) es la alternativa que minimiza el arrepentimiento máximo.
+4.  Bajo el criterio de Savage, Múnich es la alternativa que minimiza el arrepentimiento máximo.
 
-5.  El destino Cracovia ($d_3$) resulta ser la opción óptima para la mayoría de los criterios analizados (Wald, Hurwicz, Laplace y Savage).
+5.  El destino Cracovia resulta ser la opción óptima para la mayoría de los criterios analizados.
