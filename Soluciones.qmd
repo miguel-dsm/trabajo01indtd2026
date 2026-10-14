@@ -1,0 +1,126 @@
+---
+title: "Soluciones"
+format:
+  typst: default
+  html: default
+editor: visual
+---
+
+## Problema 1: Tabla de decisión
+
+Dada la matriz de decisión con valores numéricos inventados para 4 alternativas de decisión (d1, d2, d3, d4) y 3 estados de la naturaleza (e1, e2, e3):
+
+| Alternativas / Estados | e1  | e2  | e3  |
+|:----------------------:|:---:|:---:|:---:|
+|           d1           | 12  |  8  | 15  |
+|           d2           | 20  |  5  | 10  |
+|           d3           | 14  | 14  | 12  |
+|           d4           |  9  | 18  |  6  |
+
+**Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
+
+Inicialización:
+
+```{r}
+source("teoriadecision_funciones_incertidumbre.R")
+matporfilas<-c(12,8,15,20,5,10,14,14,12,9,18,6)
+tabla_decision<-crea.tablaX(matporfilas,numalternativas = 4,numestados = 3,nb_alternativas = c("d1","d2","d3","d4"),
+            nb_estados = c("e1","e2","e3") )
+```
+
+1.  En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d~3~ con un valor óptimo de 12.
+
+```{r}
+criterio.Wald(tabla_decision)
+
+```
+
+**Solución:** Vemos, por tanto, que este enunciado es **VERDADERO**
+
+2.  Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d~2~ con un arrepentimiento máximo de 5.
+
+```{r}
+criterio.Savage(tabla_decision,favorable = F)
+```
+
+**Solución:** Observamos que las alternativas óptimas son d1 y d3, con un valor óptimo de 9. Por tanto, este enunciado es **FALSO**
+
+3.  Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d~2~ obteniendo un valor ponderado de 14.0.
+
+```{r}
+criterio.Hurwicz(tabla_decision,alfa = 0.6)
+```
+
+**Solución:** La salida muestra que este enunciado es **VERDADERO**
+
+4.  El criterio de Laplace en situación favorable otorga el mismo valor esperado tanto a d~1~ como a d~3~, siendo este 11.67 unidades.
+
+```{r}
+criterio.Laplace(tabla_decision)
+```
+
+**Solución:** Observamos que las alternativas que coinciden con ese valor son d1 y d2, y no d1 y d3. Por tanto, el enunciado es **FALSO**
+
+5.  En situación desfavorable (costos), el criterio Optimista selecciona d~3~ porque presenta el menor costo máximo global de 12.
+
+```{r}
+criterio.Optimista(tabla_decision,favorable = F)
+```
+
+**Solución:** Observamos que es FALSO. Selecciona la alternativa d2 con el valor óptimo 5.
+
+## **Problema 2: Caso real. Selección del Destino Erasmus**
+
+Un estudiante del Grado en Estadística ha obtenido una beca de movilidad Erasmus para el próximo curso académico y debe elegir su destino entre cuatro alternativas: Bolonia, Múnich, Cracovia o Coímbra. Su objetivo es maximizar el ahorro económico neto al finalizar su estancia.
+
+El rendimiento económico final dependerá del tipo de alojamiento al que pueda acceder una vez en el destino. Se consideran tres escenarios posibles: conseguir plaza en una residencia universitaria pública, alquilar una habitación en piso compartido a precio estándar de mercado, o verse obligado a alquilar una habitación a precio elevado debido a la escasez de oferta.
+
+Teniendo en cuenta la cuantía de la beca asignada a cada país y el coste de vida local, el estudiante estima que:
+
+- En **Bolonia**, el ahorro neto alcanzará los $1.200$ euros en residencia pública y se reducirá a la mitad si alquila un piso a precio estándar, mientras que tener que recurrir a un alquiler elevado le supondrá una pérdida de $300$ euros.
+
+- En **Múnich**, al contar con una beca más alta pero costes elevados, podrá ahorrar hasta $2.500$ euros en residencia pública; sin embargo, en piso estándar el ahorro caerá a $400$ euros y la opción de piso caro le generará unas pérdidas de $1.200$ euros.
+
+- En **Cracovia**, dado el bajo coste de vida, obtendrá un ahorro de $2.200$ euros en residencia y de $1.400$ euros en piso estándar, manteniendo un saldo positivo de $500$ euros aun en el escenario más caro.
+
+- En **Coímbra**, estimó un ahorro de $1.800$ euros en residencia pública, de $1.000$ euros en piso estándar y de $200$ euros en el caso de piso caro.
+
+**Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
+
+1.  El criterio de Wald (pesimista) recomienda seleccionar Cracovia ($d_3$) porque es la opción que garantiza el mayor ahorro en el peor de los escenarios de alojamiento.
+
+    ```{r}
+    # En primer lugar, creamos la tabla
+    matriz_decision <-   c(
+    1200,  600,  -300,  
+    2500,  400, -1200,  
+    2200, 1400,   500,  
+    1800, 1000,   200   
+      )
+    tabla_decision2<-crea.tablaX(matriz_decision,numalternativas = 4,numestados = 3,nb_alternativas = c("Bolonia","Múnich","Cracovia","Coímbra"),
+                                nb_estados = c("Residencia Pública","Piso compartido","Piso individual") )
+
+
+    ```
+
+```{r}
+criterio.Todos(tabla_decision2)
+```
+
+**Solución:** Como vemos en la columna de Wald, Cracovia es la ciudad elegida según este criterio al proporcionar el mayor ahorro. **VERDADERO**
+
+2.  Un estudiante totalmente optimista elegirá la ciudad de Cracovia ($d_3$).
+
+    **Solución: FALSO.** Un estudiante totalmente optimista elegiría Múnich.
+
+3.  Aplicando el criterio de Laplace (equiprobabilidad), la decisión recomendada es Cracovia ($d_3$) con un ahorro medio esperado de $1.366,67$ €.
+
+    **Solución: VERDADERO.** Lo observamos en la columna Laplace
+
+4.  Bajo el criterio de Savage, Múnich ($d_2$) es la alternativa que minimiza el arrepentimiento máximo.
+
+    **Solución: FALSO.** La alternativa que minimiza el arrepentimiento es Cracovia
+
+5.  El destino Cracovia ($d_3$) resulta ser la opción óptima para la mayoría de los criterios analizados
+
+    **Solución: VERDADERO.** Cracovia es 5 veces óptima.
