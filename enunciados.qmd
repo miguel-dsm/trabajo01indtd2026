@@ -19,15 +19,15 @@ Dada la matriz de decisión con valores numéricos inventados para 4 alternativa
 
 **Cuestionario (Indicar Verdadero o Falso para cada afirmación):**
 
-1.  En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa d~3~ con un valor óptimo de 12.
+1.  En situación favorable (beneficios), el criterio de Wald (pesimista) selecciona la alternativa $d_3$ con un valor óptimo de 12.
 
-2.  Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es d~2~ con un arrepentimiento máximo de 5.
+2.  Bajo el criterio de Savage en situación desfavorable (costos), la única alternativa óptima es $d_2$ con un arrepentimiento máximo de 5.
 
-3.  Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es d~2~ obteniendo un valor ponderado de 14.0.
+3.  Con un coeficiente de optimismo α = 0.6 en beneficios, la decisión óptima según Hurwicz es $d_2$ obteniendo un valor ponderado de 14.0.
 
-4.  El criterio de Laplace otorga el mismo valor esperado tanto a d~1~ como a d~2~, siendo este exactamente de 11.67 unidades.
+4.  El criterio de Laplace otorga el mismo valor esperado tanto a $d_1$ como a $d_2$~, siendo este exactamente de 11.67 unidades.
 
-5.  En situación desfavorable (costos), el criterio Optimista selecciona d~3~ porque presenta el menor costo máximo global de 12.
+5.  En situación desfavorable (costos), el criterio Optimista selecciona $d_3$ porque presenta el menor costo máximo global de 12.
 
 ## **Problema 2: Caso real. Selección del Destino Erasmus**
 
