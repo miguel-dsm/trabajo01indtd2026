@@ -432,11 +432,22 @@ d2
  2 </code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Gráfico de Hurwicz para la situación favorable</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla_decision, <span class="at">favorable =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Soluciones_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="situación-desfavorable-3" class="level4">
 <h4 class="anchored" data-anchor-id="situación-desfavorable-3">Situación desfavorable</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tabla_decision,<span class="at">alfa=</span><span class="fl">0.6</span>,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Hurwicz</span>(tabla_decision,<span class="at">alfa=</span><span class="fl">0.6</span>,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
 [1] "Hurwicz"
@@ -466,6 +477,17 @@ d1 d4
  1  4 </code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Gráfico de Hurwicz para la situación desfavorable</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dibuja.criterio.Hurwicz</span>(tabla_decision, <span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Soluciones_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="criterio-laplace" class="level3">
@@ -473,7 +495,7 @@ d1 d4
 <section id="situación-favorable-4" class="level4">
 <h4 class="anchored" data-anchor-id="situación-favorable-4">Situación Favorable</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tabla_decision)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tabla_decision)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
 [1] "Laplace"
@@ -504,7 +526,7 @@ d3
 <section id="situación-desfavorable-4" class="level4">
 <h4 class="anchored" data-anchor-id="situación-desfavorable-4">Situación desfavorable</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tabla_decision,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Laplace</span>(tabla_decision,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
 [1] "Laplace"
@@ -538,7 +560,7 @@ d4
 <section id="situación-favorable-5" class="level4">
 <h4 class="anchored" data-anchor-id="situación-favorable-5">Situación Favorable</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tabla_decision)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tabla_decision)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
 [1] "Punto Ideal"
@@ -573,7 +595,7 @@ d3
 <section id="situación-desfavorable-5" class="level4">
 <h4 class="anchored" data-anchor-id="situación-desfavorable-5">Situación desfavorable</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tabla_decision,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.PuntoIdeal</span>(tabla_decision,<span class="at">favorable =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$criterio
 [1] "Punto Ideal"
@@ -641,17 +663,17 @@ d1
 </ul>
 <p><strong>Solución general (todos los métodos)</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>matriz_decision <span class="ot">&lt;-</span>   <span class="fu">c</span>(</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1200</span>,  <span class="dv">600</span>,  <span class="sc">-</span><span class="dv">300</span>,  </span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="dv">2500</span>,  <span class="dv">400</span>, <span class="sc">-</span><span class="dv">1200</span>,  </span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2200</span>, <span class="dv">1400</span>,   <span class="dv">500</span>,  </span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1800</span>, <span class="dv">1000</span>,   <span class="dv">200</span>   </span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>tabla_decision2<span class="ot">&lt;-</span><span class="fu">crea.tablaX</span>(matriz_decision,<span class="at">numalternativas =</span> <span class="dv">4</span>,<span class="at">numestados =</span> <span class="dv">3</span>,<span class="at">nb_alternativas =</span> <span class="fu">c</span>(<span class="st">"Bolonia"</span>,<span class="st">"Múnich"</span>,<span class="st">"Cracovia"</span>,<span class="st">"Coímbra"</span>),</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>                            <span class="at">nb_estados =</span> <span class="fu">c</span>(<span class="st">"Residencia Pública"</span>,<span class="st">"Piso compartido"</span>,<span class="st">"Piso individual"</span>) )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>matriz_decision <span class="ot">&lt;-</span>   <span class="fu">c</span>(</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1200</span>,  <span class="dv">600</span>,  <span class="sc">-</span><span class="dv">300</span>,  </span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="dv">2500</span>,  <span class="dv">400</span>, <span class="sc">-</span><span class="dv">1200</span>,  </span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="dv">2200</span>, <span class="dv">1400</span>,   <span class="dv">500</span>,  </span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="dv">1800</span>, <span class="dv">1000</span>,   <span class="dv">200</span>   </span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>tabla_decision2<span class="ot">&lt;-</span><span class="fu">crea.tablaX</span>(matriz_decision,<span class="at">numalternativas =</span> <span class="dv">4</span>,<span class="at">numestados =</span> <span class="dv">3</span>,<span class="at">nb_alternativas =</span> <span class="fu">c</span>(<span class="st">"Bolonia"</span>,<span class="st">"Múnich"</span>,<span class="st">"Cracovia"</span>,<span class="st">"Coímbra"</span>),</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>                            <span class="at">nb_estados =</span> <span class="fu">c</span>(<span class="st">"Residencia Pública"</span>,<span class="st">"Piso compartido"</span>,<span class="st">"Piso individual"</span>) )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tabla_decision2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">criterio.Todos</span>(tabla_decision2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                Residencia Pública Piso compartido Piso individual     Wald
 Bolonia                       1200             600            -300     -300

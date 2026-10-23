@@ -73,10 +73,20 @@ criterio.Savage(tabla_decision,favorable = F)
 criterio.Hurwicz(tabla_decision,alfa = 0.6)
 ```
 
+```{r}
+## Gráfico de Hurwicz para la situación favorable
+dibuja.criterio.Hurwicz(tabla_decision, favorable = TRUE)
+```
+
 #### Situación desfavorable
 
 ```{r}
 criterio.Hurwicz(tabla_decision,alfa=0.6,favorable = F)
+```
+
+```{r}
+## Gráfico de Hurwicz para la situación desfavorable
+dibuja.criterio.Hurwicz(tabla_decision, favorable = F)
 ```
 ### Criterio Laplace
 #### Situación Favorable
